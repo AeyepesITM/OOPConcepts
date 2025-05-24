@@ -2,21 +2,65 @@
 
 try
 {
-    var date1 = new Date() { Year = 2025, Month = 05, Day = 23 };
-    var date2 = new Date(2024, 2, 29);
-    var date3 = new Date
+    var employeeSalary1 = new SalaryEmployee
     {
-        Year = 1895,
-        Month = 11,
-        Day = 1
+        Id = 1010,
+        FirstName = "John",
+        LastName = "Doe",
+        BornDate = new Date(1990, 5, 15),
+        HireDate = new Date(2020, 1, 1),
+        IsActive = true,
+        Salary = 1600000m
     };
-    //Ultima interfaz
-    date1.Year = date2.Year + 20;
-    date1.Month = date3.Month + 1;
-    date1.Day = 15;
-    Console.WriteLine($"Date 1: {date1}");
-    Console.WriteLine($"Date 2: {date2}");
-    Console.WriteLine($"Date 3: {date3}");
+    var employeeWorkHour1 = new HourlyEmployee
+    {
+        Id = 2020,
+        FirstName = "Benjamin",
+        LastName = "Button",
+        BornDate = new Date(1985, 10, 15),
+        HireDate = new Date(2020, 11, 11),
+        IsActive = true,
+        HourValue = 85000m,
+        WorkingHours = 123.5f
+    };
+
+    var employeeCommision1 = new CommisionEmployee
+    {
+        Id = 3030,
+        FirstName = "Jazmin",
+        LastName = "Cifuentes",
+        BornDate = new Date(1995, 10, 15),
+        HireDate = new Date(2015, 8, 18),
+        IsActive = true,
+        CommisionPercentage = 0.05f,
+        Sales = 300000000m
+    };
+
+    var employeeBaseCommision1 = new BaseCommisionEmployee
+    {
+        Id = 4040,
+        FirstName = "Sara",
+        LastName = "Lopez",
+        BornDate = new Date(1995, 10, 15),
+        HireDate = new Date(2015, 8, 18),
+        IsActive = true,
+        CommisionPercentage = 0.025f,
+        Salary = 620000m,
+        Sales = 55000000m
+    };
+
+    decimal payRoll = 0m;
+    // Array of employees
+    Employee[] employees = new Employee[] { employeeSalary1, employeeWorkHour1, employeeCommision1, employeeBaseCommision1 };
+
+    // Displaying the information of each employee
+    foreach (var employee in employees)
+    {
+        Console.WriteLine(employee.ToString());
+        payRoll += employee.GetValueToPay();
+    }
+    Console.WriteLine($"                       ====================");
+    Console.WriteLine($"Total payroll: {payRoll,28:C2}");
 }
 catch (Exception ex)
 {
