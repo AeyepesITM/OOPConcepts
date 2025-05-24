@@ -1,4 +1,4 @@
-﻿namespace OOPConcepts;
+﻿namespace OOPConcepts.Logic;
 
 public class Date
 {

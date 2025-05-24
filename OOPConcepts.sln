@@ -5,6 +5,10 @@ VisualStudioVersion = 17.14.36109.1 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPConcepts", "OOPConcepts\OOPConcepts.csproj", "{05CFF491-BDEB-40A6-BFB1-80A46234FB39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPConcepts.Logic", "OOPConcepts.Logic\OOPConcepts.Logic.csproj", "{EC913966-5C3C-423C-BC3D-21FF2CC60EB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPConcepts.UserInterface", "OOPConcepts.UserInterface\OOPConcepts.UserInterface.csproj", "{BC6A4DCF-0CA7-4A49-8CA9-826B0495D9E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{05CFF491-BDEB-40A6-BFB1-80A46234FB39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05CFF491-BDEB-40A6-BFB1-80A46234FB39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05CFF491-BDEB-40A6-BFB1-80A46234FB39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC913966-5C3C-423C-BC3D-21FF2CC60EB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC913966-5C3C-423C-BC3D-21FF2CC60EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC913966-5C3C-423C-BC3D-21FF2CC60EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC913966-5C3C-423C-BC3D-21FF2CC60EB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC6A4DCF-0CA7-4A49-8CA9-826B0495D9E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC6A4DCF-0CA7-4A49-8CA9-826B0495D9E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC6A4DCF-0CA7-4A49-8CA9-826B0495D9E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC6A4DCF-0CA7-4A49-8CA9-826B0495D9E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

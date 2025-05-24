@@ -1,9 +1,8 @@
-﻿using OOPConcepts;
+﻿using OOPConcepts.Logic;
 
 try
 {
     var date1 = new Date() { Year = 2025, Month = 05, Day = 23 };
-    //Date date1 = new() { Year = 2025, Month = 05, Day = 23 };
     var date2 = new Date(2024, 2, 29);
     var date3 = new Date
     {
