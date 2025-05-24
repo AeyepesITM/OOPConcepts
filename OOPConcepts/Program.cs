@@ -60,7 +60,52 @@ try
         payRoll += employee.GetValueToPay();
     }
     Console.WriteLine($"                       ====================");
+    Console.WriteLine($"Total payroll: {payRoll,28:C2}\n");
+
+    //Invoice example
+
+    var invoice1 = new Invoice
+    {
+        Id = 1234,
+        Description = "Papel",
+        Quantity = 84,
+        Price = 12000m
+    };
+    var invoice2 = new Invoice
+    {
+        Id = 1235,
+        Description = "Lapiz",
+        Quantity = 100,
+        Price = 2000m
+    };
+    var invoice3 = new Invoice
+    {
+        Id = 1236,
+        Description = "Cuaderno",
+        Quantity = 50,
+        Price = 5000m
+    };
+    var invoice4 = new Invoice
+    {
+        Id = 1237,
+        Description = "Borrador",
+        Quantity = 200,
+        Price = 1000m
+    };
+
+    Invoice[] invoices = [invoice1, invoice2, invoice3, invoice4];
+    decimal invoiceTotal = 0m;
+    // Displaying the information of each invoice
+    foreach (var invoice in invoices)
+    {
+        Console.WriteLine(invoice);
+        invoiceTotal += invoice.GetValueToPay();
+    }
+    Console.WriteLine($"                       ====================");
+    Console.WriteLine($"Total invoice: {invoiceTotal,28:C2}");
     Console.WriteLine($"Total payroll: {payRoll,28:C2}");
+    Console.WriteLine($"                       ====================");
+    Console.WriteLine($"Total pay....: {payRoll + invoiceTotal,28:C2}");
 }
 catch (Exception ex)
 {

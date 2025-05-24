@@ -2,7 +2,7 @@
 
 #region Class Employee
 
-public abstract class Employee
+public abstract class Employee : IPay
 {
     #region Properties
 
@@ -26,7 +26,6 @@ public abstract class Employee
     public abstract decimal GetValueToPay();
 
     #endregion Methods
-
 }
 
 #endregion Class Employee
